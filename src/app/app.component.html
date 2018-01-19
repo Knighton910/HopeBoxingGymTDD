@@ -1,14 +1,45 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center" class="wrapper">
-  <h1 style="color: lightcoral">
-    Welcome to {{ title }}
-  </h1>
 
-  <div class="gallery">
-    <img width="1000" src="../assets/fat.jpg">
+<h1 style="color: white">Gym of Hope</h1>
+<button mat-raised-button color="warn" (click)="isLoggedIn = !isLoggedIn">{{ isLoggedIn ? 'log out' : 'log in' }} </button>
 
-    <img width="1000" src="../assets/Detroit-Youth-Boxing.jpg">
+<div *ngIf="isLoggedIn">
+  <mat-toolbar>
+    <p class="whatatool">Hope Gym</p>
+    <ul>
+      <li>Home</li>
+      <li>About US</li>
+      <li>Contact</li>
+    </ul>
+  </mat-toolbar>
 
-    <img src="../assets/Shot.png">
+  <div style="text-align:center" class="wrapper">
+    <h1 style="color: lightcoral">
+      Welcome to {{ title }}
+    </h1>
+
+    <div class="gallery">
+      <img width="1000" src="../assets/fat.jpg">
+
+      <p class="firstP info">
+        Lorem ipsum dolor amet vaporware roof party tbh hexagon. Cronut taiyaki umami, brunch heirloom raw denim copper mug echo park hell of williamsburg schlitz truffaut listicle iceland. Gentrify taiyaki tacos, post-ironic bitters coloring book cornhole next level sartorial. Williamsburg taiyaki knausgaard mustache. Cronut wolf knausgaard DIY fingerstache pour-over. Meggings flannel vegan air plant ethical cold-pressed, plaid sartorial green juice mlkshk bespoke
+      </p>
+
+      <img width="1000" src="../assets/Detroit-Youth-Boxing.jpg">
+
+      <p class="info">
+        Occupy squid kombucha hot chicken asymmetrical man bun farm-to-table blue bottle jianbing food truck beard. Butcher la croix chambray typewriter ugh jean shorts distillery asymmetrical sriracha. Bushwick next level church-key cloud bread tumeric viral. Helvetica offal live-edge succulents pabst keffiyeh.
+
+        Quinoa hoodie listicle, try-hard neutra literally edison bulb tumblr trust fund flexitarian butcher flannel. Crucifix tacos enamel pin artisan pug heirloom hammock hoodie scenester squid blue bottle. Flannel wolf hexagon narwhal air plant humblebrag hoodie migas woke banjo hashtag edison bulb copper mug. Twee pour-over bushwick enamel pin readymade leggings 8-bit 3 wolf moon unicorn direct trade tilde cronut sartorial meggings.
+      </p>
+
+      <img src="../assets/Shot.png">
+
+      <p class="info">
+        Lorem ipsum dolor amet vaporware roof party tbh hexagon. Cronut taiyaki umami, brunch heirloom raw denim copper mug echo park hell of williamsburg schlitz truffaut listicle iceland. Gentrify taiyaki tacos, post-ironic bitters coloring book cornhole next level sartorial. Williamsburg taiyaki knausgaard mustache. Cronut wolf knausgaard DIY fingerstache pour-over. Meggings flannel vegan air plant ethical cold-pressed, plaid sartorial green juice mlkshk bespoke.
+
+        Occupy squid kombucha hot chicken asymmetrical man bun farm-to-table blue bottle jianbing food truck beard. Butcher la croix chambray typewriter ugh jean shorts distillery asymmetrical sriracha. Bushwick next level church-key cloud bread tumeric viral. Helvetica offal live-edge succulents pabst keffiyeh.
+      </p>
+    </div>
   </div>
 </div>
